@@ -1,0 +1,225 @@
+/*=======================
+   BASE STYLES
+=======================*/
+
+body {
+  background-color: #FCFCFC;
+  color: #8E9397;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.wrapper {
+  margin: 0 auto;
+  text-align: center;
+  width: 80%;
+}
+
+.header {
+  margin-top: 2em;
+}
+
+.title {
+  color: #4A4A4A;
+  font-weight: 600;
+}
+
+.search-box {
+  border:1px solid #cccccc;
+  border-radius: 5px;
+  padding: .25em;
+  width: 90%;
+}
+
+.search-box:focus {
+  outline: none;
+}
+
+/* ======================
+  EMPLOYEE BOXES
+=======================*/
+
+.inner-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2em;
+  text-align: center;
+  width: 100%;
+}
+
+.employee-box {
+  background-color: #FFF;
+  border: 1px solid #DFDFDF;
+  border-radius: 5px;
+  display: flex;
+  flex: 1 300px;
+  margin: 5px auto;
+  min-width: 310px;
+  max-width: 350px;
+}
+
+.employee-box:hover {
+  background-color: #F8F8F8;
+  cursor: pointer;
+}
+
+.employee-img {
+  border-radius: 50%;
+  height: 100px;
+  padding: 1em;
+  width: 100px;
+}
+
+.box-info {
+  align-self: center;
+  text-align: left;
+}
+
+.employee-username {
+  display: none;
+}
+
+.employee-name {
+  color: #404A51;
+  font-weight: 700;
+  margin-bottom: .5em;
+}
+
+.employee-email,
+.employee-city {
+  font-size: .7rem;
+  margin: .5em 0;
+  padding-right: 5px;
+}
+
+/* ======================
+  MODAL OVERLAY
+=======================*/
+.modal-overlay {
+  background-color: rgba(0, 0, 0, .5);
+  display: none;
+  height: 100vh;
+  left: 0;
+  margin: 0 auto;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  z-index: 1;
+}
+
+.modal-popup {
+  background-color: #FFF;
+  border: 2px solid #DFDFDF;
+  border-radius: 5px;
+  height: 400px;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+  transform: translateY(30%);
+  width: 300px;
+  z-index: 2;
+}
+
+.close-btn {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+}
+
+.close-btn,
+.left-btn,
+.right-btn {
+  font-size: 1.2rem;
+}
+
+.close-btn:hover,
+.left-btn:hover,
+.right-btn:hover {
+  cursor: pointer;
+  opacity: .6;
+}
+
+.left-btn {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+}
+
+.right-btn {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+}
+
+.modal-info {
+  margin: 0 auto;
+  width: 90%;
+}
+
+.modal-img {
+  border-radius: 50%;
+  margin-top: 2em;
+}
+
+.modal-name {
+  color: #404A51;
+  font-weight: 700;
+}
+
+.modal-email,
+.modal-city,
+.modal-cell,
+.modal-street,
+.modal-birthday {
+  font-size: .8rem;
+}
+
+.modal-city {
+  border-bottom: 1px solid #DFDFDF;
+  padding-bottom: 2em;
+}
+
+.modal-cell {
+  padding-top: 1em;
+}
+
+/*=======================
+   DESKTOP STYLES
+=======================*/
+
+@media (min-width: 768px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    margin: 1em auto;
+    max-width: 975px;
+  }
+
+  .search-box {
+    width: 40%;
+  }
+
+  .inner-wrapper {
+      margin: 1em auto;
+      max-width: 1000px;
+  }
+
+  .employee-box {
+    margin: 5px;
+  }
+
+  .modal-popup {
+    background-color: #FFF;
+    border: 2px solid #DFDFDF;
+    border-radius: 5px;
+    height: 400px;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    transform: translateY(30%);
+    width: 350px;
+    z-index: 2;
+  }
+
+}
