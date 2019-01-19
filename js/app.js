@@ -129,6 +129,7 @@ function generateEmployeeHTML(employees) {
   }
 }
 
+// FUNCTION TO CREATE A MODAL WHEN USER IS CLICKED
 function generateModalHTML(employeeData, i) {
   const employee = employeeData;
   let index = i;
